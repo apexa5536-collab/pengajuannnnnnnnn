@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
 <meta charset="UTF-8">
 
 <meta name="viewport"
@@ -54,7 +53,7 @@ viewport-fit=cover">
 
     <p>
       16 Mei 2026<br>
-      17:33
+      22:36
     </p>
 
   </div>
@@ -69,7 +68,7 @@ viewport-fit=cover">
 
     <p>
       16 Mei 2026<br>
-      17:34
+      22:38
     </p>
 
   </div>
@@ -84,22 +83,22 @@ viewport-fit=cover">
 
     <p>
       16 Mei 2026<br>
-      17:35
+      22:39
     </p>
 
   </div>
 
-  <div class="step success">
+  <div class="step red">
 
-    <div class="circle">✓</div>
+    <div class="circle">✕</div>
 
-    <h3 style="color:#6ee7b7;">
-      Berhasil
+    <h3 class="hasil-title">
+      Ditolak
     </h3>
 
     <p>
       16 Mei 2026<br>
-      17:40
+      22:41
     </p>
 
   </div>
@@ -108,18 +107,18 @@ viewport-fit=cover">
 
 <!-- ALERT -->
 
-<div class="alert success-alert glass">
+<div class="alert glass">
 
-  <div class="alert-icon success-icon">
-    ✓
+  <div class="alert-icon">
+    ✕
   </div>
 
   <div>
 
-    <h2>Pengajuan Berhasil</h2>
+    <h2>Pengajuan Ditolak</h2>
 
     <p>
-      Dana sedang diproses ke rekening tujuan
+      Uang jaminan tidak sesuai ketentuan sistem
     </p>
 
   </div>
@@ -140,38 +139,38 @@ viewport-fit=cover">
 
       <div class="row">
         <label>Nama</label>
-        <span>: Asep Rohiman</span>
+        <span>: Laela Misaroh</span>
       </div>
 
       <div class="row">
         <label>Nominal</label>
-        <span>: 52.000.000</span>
+        <span>: 700.000</span>
       </div>
 
       <div class="row">
         <label>Tenor</label>
-        <span>: 36 bulan</span>
+        <span>: 12 bulan</span>
       </div>
 
       <div class="row">
         <label>Pencairan</label>
-        <span>: BNI</span>
+        <span>: DANA</span>
       </div>
 
       <div class="row">
         <label>No. Rek</label>
-        <span>: 8764578390</span>
+        <span>: 085724120956</span>
       </div>
 
       <div class="row">
         <label>A/n</label>
-        <span>: Asep Rohiman</span>
+        <span>: Laela Misaroh</span>
       </div>
 
     </div>
 
     <div class="logo">
-      <img src="assets/ktp8.png">
+      <img src="assets/ktp9.png">
     </div>
 
   </div>
@@ -198,20 +197,20 @@ viewport-fit=cover">
 
       <tr>
         <td>Uang Jaminan Sistem</td>
-        <td>5.500.000</td>
-        <td class="green">Sesuai</td>
+        <td>200.000</td>
+        <td class="green">Valid</td>
       </tr>
 
       <tr>
         <td>Uang Jaminan Diterima</td>
-        <td>5.500.000</td>
-        <td class="green">Sesuai</td>
+        <td>0</td>
+        <td class="red-text">Kurang</td>
       </tr>
 
       <tr>
-        <td class="green">Kelebihan</td>
-        <td class="green">0</td>
-        <td class="green">Lunas</td>
+        <td class="red-text">Kekurangan</td>
+        <td class="red-text">200.000</td>
+        <td></td>
       </tr>
 
     </table>
@@ -220,20 +219,21 @@ viewport-fit=cover">
 
   <!-- INFO -->
 
-  <div class="info success-box">
+  <div class="info red-box">
 
-    <div class="info-icon success-small">
-      ✓
+    <div class="info-icon">
+      !
     </div>
 
     <div>
 
-      <h4 class="green">
-        Verifikasi Berhasil
+      <h4 class="red-text">
+        Alasan Penolakan
       </h4>
 
       <p>
-        Dana berhasil diverifikasi dan pencairan sedang diproses oleh sistem.
+        Sistem mendeteksi nominal uang jaminan tidak sesuai.
+        Pengajuan otomatis ditolak sementara.
       </p>
 
     </div>
@@ -248,12 +248,12 @@ viewport-fit=cover">
 
     <div>
 
-      <h4 style="color:#60a5fa;">
+      <h4 class="info-title">
         Informasi
       </h4>
 
       <p>
-        Estimasi pencairan dana sekitar 5-15 menit tergantung antrean sistem bank.
+        Silahkan lakukan re-upload atau ajukan ulang setelah nominal sesuai.
       </p>
 
     </div>
