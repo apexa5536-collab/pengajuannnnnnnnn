@@ -20,26 +20,32 @@
 
 html,body{
   width:100%;
-  overflow-x:hidden;
+  height:100%;
+  overflow:hidden;
 }
 
 body{
   background:
   radial-gradient(circle at top,#1e3a8a 0%,#0f172a 45%,#020617 100%);
-  
-  padding:8px;
+
+  padding:6px;
+
   color:#fff;
 
   max-width:480px;
   margin:auto;
 
   min-height:100vh;
+
+  zoom:0.72;
+  transform-origin:top center;
 }
 
 /* GLASS */
 
 .glass{
   background:rgba(255,255,255,0.07);
+
   backdrop-filter:blur(16px);
   -webkit-backdrop-filter:blur(16px);
 
@@ -56,24 +62,28 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:14px;
+
+  margin-bottom:10px;
 }
 
 .header h1{
-  font-size:17px;
+  font-size:15px;
   font-weight:800;
 }
 
 .bantuan{
-  padding:8px 14px;
+  padding:6px 12px;
+
   border-radius:999px;
 
-  background:linear-gradient(135deg,#3b82f6,#2563eb);
+  background:
+  linear-gradient(135deg,#3b82f6,#2563eb);
 
-  font-size:11px;
+  font-size:10px;
   font-weight:700;
 
-  box-shadow:0 6px 18px rgba(37,99,235,.35);
+  box-shadow:
+  0 6px 18px rgba(37,99,235,.35);
 }
 
 /* STEP */
@@ -82,11 +92,11 @@ body{
   display:flex;
   justify-content:space-between;
 
-  margin:14px 0 18px;
+  margin:8px 0 10px;
 
-  padding:14px 8px;
+  padding:10px 4px;
 
-  border-radius:22px;
+  border-radius:18px;
 
   position:relative;
 }
@@ -99,19 +109,23 @@ body{
 
 .line{
   position:absolute;
-  top:20px;
+
+  top:16px;
   left:60%;
+
   width:100%;
-  height:3px;
+  height:2px;
 
   background:rgba(255,255,255,.12);
 
   border-radius:20px;
+
   overflow:hidden;
 }
 
 .line::before{
   content:'';
+
   position:absolute;
   inset:0;
 
@@ -124,18 +138,18 @@ body{
 }
 
 .circle{
-  width:42px;
-  height:42px;
+  width:34px;
+  height:34px;
 
   margin:auto;
 
-  border-radius:15px;
+  border-radius:12px;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  font-size:17px;
+  font-size:14px;
 
   position:relative;
   z-index:2;
@@ -158,30 +172,34 @@ body{
 }
 
 .step h3{
-  font-size:11px;
-  margin-top:7px;
+  font-size:9px;
+
+  margin-top:5px;
   margin-bottom:2px;
+
   font-weight:700;
 }
 
 .step p{
-  font-size:8px;
+  font-size:7px;
+
   color:rgba(255,255,255,.65);
-  line-height:1.4;
+
+  line-height:1.2;
 }
 
 /* ALERT */
 
 .alert{
-  border-radius:20px;
+  border-radius:16px;
 
-  padding:12px;
+  padding:10px;
 
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:8px;
 
-  margin-bottom:12px;
+  margin-bottom:9px;
 
   position:relative;
   overflow:hidden;
@@ -202,10 +220,10 @@ body{
 }
 
 .alert-icon{
-  width:42px;
-  height:42px;
+  width:34px;
+  height:34px;
 
-  border-radius:15px;
+  border-radius:12px;
 
   background:
   linear-gradient(145deg,#ef4444,#b91c1c);
@@ -214,7 +232,7 @@ body{
   align-items:center;
   justify-content:center;
 
-  font-size:18px;
+  font-size:14px;
 
   position:relative;
   z-index:2;
@@ -229,24 +247,24 @@ body{
 }
 
 .alert h2{
-  font-size:14px;
+  font-size:12px;
   margin-bottom:2px;
   font-weight:800;
 }
 
 .alert p{
-  font-size:11px;
+  font-size:9px;
   color:rgba(255,255,255,.75);
 }
 
 /* CARD */
 
 .card{
-  border-radius:22px;
+  border-radius:18px;
 
-  padding:13px;
+  padding:10px;
 
-  margin-bottom:12px;
+  margin-bottom:9px;
 
   position:relative;
   overflow:hidden;
@@ -257,11 +275,11 @@ body{
 
   position:absolute;
 
-  width:160px;
-  height:160px;
+  width:120px;
+  height:120px;
 
-  top:-90px;
-  right:-90px;
+  top:-70px;
+  right:-70px;
 
   background:
   rgba(255,255,255,.03);
@@ -270,10 +288,10 @@ body{
 }
 
 .card-title{
-  font-size:15px;
+  font-size:13px;
   font-weight:800;
 
-  margin-bottom:13px;
+  margin-bottom:10px;
 
   position:relative;
   z-index:2;
@@ -298,21 +316,21 @@ body{
 
 .row{
   display:flex;
-  margin-bottom:8px;
+  margin-bottom:5px;
 }
 
 .row label{
-  width:82px;
+  width:72px;
 
   color:rgba(255,255,255,.6);
 
-  font-size:11px;
+  font-size:9px;
 }
 
 .row span{
   flex:1;
 
-  font-size:11px;
+  font-size:9px;
   font-weight:700;
 
   color:#fff;
@@ -321,10 +339,10 @@ body{
 /* LOGO */
 
 .logo{
-  width:90px;
-  height:60px;
+  width:74px;
+  height:50px;
 
-  border-radius:14px;
+  border-radius:10px;
 
   overflow:hidden;
 
@@ -346,7 +364,8 @@ body{
 
 .table-wrap{
   overflow:hidden;
-  border-radius:16px;
+
+  border-radius:12px;
 
   border:1px solid rgba(255,255,255,.06);
 
@@ -362,20 +381,20 @@ body{
 .table th{
   background:rgba(255,255,255,.06);
 
-  padding:8px 4px;
+  padding:6px 3px;
 
-  font-size:10px;
+  font-size:8px;
   font-weight:700;
 
   color:#dbeafe;
 }
 
 .table td{
-  padding:9px 4px;
+  padding:7px 3px;
 
   text-align:center;
 
-  font-size:10px;
+  font-size:8px;
 
   border-bottom:
   1px solid rgba(255,255,255,.05);
@@ -398,14 +417,14 @@ body{
 /* INFO */
 
 .info{
-  border-radius:16px;
+  border-radius:12px;
 
-  padding:11px;
+  padding:8px;
 
-  margin-top:10px;
+  margin-top:8px;
 
   display:flex;
-  gap:8px;
+  gap:6px;
 
   position:relative;
   overflow:hidden;
@@ -437,8 +456,8 @@ body{
 }
 
 .info-icon{
-  width:20px;
-  height:20px;
+  width:16px;
+  height:16px;
 
   border-radius:50%;
 
@@ -447,7 +466,8 @@ body{
   justify-content:center;
 
   color:#fff;
-  font-size:10px;
+
+  font-size:8px;
   font-weight:700;
 
   flex-shrink:0;
@@ -472,13 +492,13 @@ body{
 }
 
 .info h4{
-  font-size:11px;
+  font-size:9px;
   margin-bottom:2px;
 }
 
 .info p{
-  font-size:10px;
-  line-height:1.5;
+  font-size:8px;
+  line-height:1.3;
 
   color:rgba(255,255,255,.72);
 }
@@ -508,9 +528,7 @@ body{
 
     <div class="line"></div>
 
-    <div class="circle">
-      📝
-    </div>
+    <div class="circle">📝</div>
 
     <h3>Pengajuan</h3>
 
@@ -525,9 +543,7 @@ body{
 
     <div class="line"></div>
 
-    <div class="circle">
-      📋
-    </div>
+    <div class="circle">📋</div>
 
     <h3>Verifikasi</h3>
 
@@ -542,9 +558,7 @@ body{
 
     <div class="line"></div>
 
-    <div class="circle">
-      🔍
-    </div>
+    <div class="circle">🔍</div>
 
     <h3>Review</h3>
 
@@ -557,9 +571,7 @@ body{
 
   <div class="step red">
 
-    <div class="circle">
-      ✕
-    </div>
+    <div class="circle">✕</div>
 
     <h3 style="color:#fb7185;">
       Hasil
@@ -594,7 +606,7 @@ body{
 
 </div>
 
-<!-- CARD DETAIL -->
+<!-- DETAIL -->
 
 <div class="card glass">
 
@@ -646,7 +658,7 @@ body{
 
 </div>
 
-<!-- TABLE CARD -->
+<!-- TABLE -->
 
 <div class="card glass">
 
@@ -686,7 +698,7 @@ body{
 
   </div>
 
-  <!-- INFO RED -->
+  <!-- INFO -->
 
   <div class="info red-box">
 
@@ -709,8 +721,6 @@ body{
     </div>
 
   </div>
-
-  <!-- INFO BLUE -->
 
   <div class="info blue-box">
 
