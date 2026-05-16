@@ -7,7 +7,7 @@
 <title>Status Pengajuan</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,13 +15,14 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Inter',sans-serif;
+  font-family:'Poppins',sans-serif;
 }
 
 body{
-  background:linear-gradient(to bottom,#f5f7ff,#edf2ff);
-  padding:10px;
-  color:#111827;
+  background:
+  radial-gradient(circle at top,#dbeafe 0%,#f8fbff 35%,#eef2ff 100%);
+  padding:12px;
+  color:#0f172a;
 }
 
 /* CONTAINER */
@@ -37,29 +38,38 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:14px;
+  margin-bottom:18px;
 }
 
 .header h1{
-  font-size:22px;
+  font-size:24px;
   font-weight:800;
   color:#0f172a;
+  letter-spacing:-0.5px;
 }
 
 .bantuan{
-  font-size:13px;
-  font-weight:700;
+  background:white;
   color:#2563eb;
+  padding:7px 14px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  box-shadow:0 8px 20px rgba(37,99,235,0.12);
 }
 
 /* STEP */
 
 .step-wrapper{
-  background:white;
-  border-radius:24px;
-  padding:16px 10px;
-  margin-bottom:14px;
-  box-shadow:0 10px 30px rgba(15,23,42,0.06);
+  background:rgba(255,255,255,0.72);
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,0.7);
+  border-radius:30px;
+  padding:18px 12px;
+  margin-bottom:18px;
+  box-shadow:
+  0 15px 40px rgba(37,99,235,0.08),
+  inset 0 1px 1px rgba(255,255,255,0.6);
 }
 
 .step-box{
@@ -74,37 +84,41 @@ body{
 }
 
 .circle{
-  width:50px;
-  height:50px;
+  width:54px;
+  height:54px;
   border-radius:50%;
-  background:linear-gradient(135deg,#3b82f6,#005eff);
+  background:
+  linear-gradient(145deg,#3b82f6,#005eff);
   display:flex;
   align-items:center;
   justify-content:center;
   color:white;
-  font-size:21px;
+  font-size:22px;
   margin:auto;
   box-shadow:
-  0 8px 20px rgba(37,99,235,0.35),
-  inset 0 1px 2px rgba(255,255,255,0.5);
+  0 12px 25px rgba(37,99,235,0.35),
+  inset 0 2px 3px rgba(255,255,255,0.5);
 }
 
 .step.red .circle{
-  background:linear-gradient(135deg,#ff5f5f,#ef4444);
+  background:
+  linear-gradient(145deg,#ff5b5b,#ef4444);
   box-shadow:
-  0 8px 20px rgba(239,68,68,0.35),
-  inset 0 1px 2px rgba(255,255,255,0.5);
+  0 12px 25px rgba(239,68,68,0.35),
+  inset 0 2px 3px rgba(255,255,255,0.4);
 }
 
 .line{
   position:absolute;
-  top:24px;
-  left:60%;
   width:100%;
-  height:3px;
-  background:linear-gradient(to right,#3b82f6,#60a5fa);
+  height:4px;
+  border-radius:999px;
+  background:
+  linear-gradient(to right,#60a5fa,#3b82f6);
+  top:25px;
+  left:60%;
   z-index:-1;
-  opacity:0.5;
+  opacity:0.45;
 }
 
 .step:last-child .line{
@@ -112,74 +126,80 @@ body{
 }
 
 .step h3{
-  margin-top:8px;
+  margin-top:10px;
   font-size:11px;
   font-weight:700;
 }
 
 .step p{
-  margin-top:3px;
+  margin-top:4px;
   font-size:8px;
-  color:#6b7280;
+  color:#64748b;
   line-height:1.4;
 }
 
 /* ALERT */
 
 .alert{
-  background:linear-gradient(180deg,#fff5f5,#fff0f0);
-  border:1px solid #ffd9d9;
-  border-radius:22px;
-  padding:14px;
+  background:
+  linear-gradient(145deg,#fff5f5,#fff1f2);
+  border:1px solid #ffd6d6;
+  border-radius:26px;
+  padding:16px;
   display:flex;
   align-items:center;
-  gap:12px;
-  margin-bottom:14px;
-  box-shadow:0 8px 20px rgba(239,68,68,0.06);
+  gap:14px;
+  margin-bottom:18px;
+  box-shadow:
+  0 12px 30px rgba(239,68,68,0.08);
 }
 
 .alert-icon{
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  background:linear-gradient(135deg,#ff5b5b,#ef4444);
+  width:48px;
+  height:48px;
+  border-radius:18px;
+  background:
+  linear-gradient(145deg,#ff5b5b,#ef4444);
   display:flex;
   align-items:center;
   justify-content:center;
   color:white;
-  font-size:20px;
+  font-size:22px;
   flex-shrink:0;
-  box-shadow:0 6px 16px rgba(239,68,68,0.25);
+  box-shadow:
+  0 10px 20px rgba(239,68,68,0.25);
 }
 
 .alert h2{
   color:#dc2626;
-  font-size:15px;
+  font-size:16px;
   font-weight:800;
 }
 
 .alert p{
+  margin-top:3px;
   color:#ef4444;
   font-size:11px;
-  margin-top:2px;
 }
 
 /* CARD */
 
 .card{
-  background:rgba(255,255,255,0.95);
-  backdrop-filter:blur(10px);
-  border-radius:24px;
-  padding:15px;
-  margin-bottom:14px;
-  box-shadow:0 10px 30px rgba(15,23,42,0.06);
-  border:1px solid rgba(255,255,255,0.5);
+  background:rgba(255,255,255,0.78);
+  backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,0.7);
+  border-radius:28px;
+  padding:18px;
+  margin-bottom:18px;
+  box-shadow:
+  0 20px 45px rgba(15,23,42,0.06),
+  inset 0 1px 1px rgba(255,255,255,0.7);
 }
 
 .card-title{
-  font-size:16px;
+  font-size:17px;
   font-weight:800;
-  margin-bottom:14px;
+  margin-bottom:16px;
   color:#0f172a;
 }
 
@@ -189,7 +209,7 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:12px;
+  gap:14px;
 }
 
 .data{
@@ -198,35 +218,36 @@ body{
 
 .row{
   display:flex;
-  margin-bottom:9px;
+  margin-bottom:10px;
 }
 
 .row label{
-  width:82px;
+  width:84px;
   font-size:11px;
-  color:#6b7280;
+  color:#64748b;
 }
 
 .row span{
   flex:1;
   font-size:11px;
   font-weight:700;
-  color:#111827;
+  color:#0f172a;
   word-break:break-word;
 }
 
 /* LOGO */
 
 .logo{
-  width:72px;
-  height:72px;
-  border-radius:20px;
+  width:76px;
+  height:76px;
+  border-radius:24px;
   overflow:hidden;
-  flex-shrink:0;
   background:white;
+  flex-shrink:0;
+  border:1px solid rgba(255,255,255,0.7);
   box-shadow:
-  0 10px 25px rgba(37,99,235,0.15),
-  inset 0 1px 2px rgba(255,255,255,0.5);
+  0 15px 35px rgba(37,99,235,0.18),
+  inset 0 2px 3px rgba(255,255,255,0.7);
 }
 
 .logo img{
@@ -239,8 +260,9 @@ body{
 
 .table-wrap{
   overflow:hidden;
-  border-radius:18px;
+  border-radius:22px;
   border:1px solid #edf2ff;
+  background:white;
 }
 
 .table{
@@ -249,15 +271,16 @@ body{
 }
 
 .table th{
-  background:#eef4ff;
-  padding:10px 4px;
+  background:
+  linear-gradient(to bottom,#f8fbff,#eef4ff);
+  padding:12px 5px;
   font-size:10px;
   color:#334155;
   font-weight:700;
 }
 
 .table td{
-  padding:10px 4px;
+  padding:12px 5px;
   text-align:center;
   font-size:10px;
   border-bottom:1px solid #f1f5f9;
@@ -273,29 +296,31 @@ body{
   font-weight:800;
 }
 
-/* INFO */
+/* INFO BOX */
 
 .info{
-  border-radius:18px;
-  padding:12px;
-  margin-top:12px;
+  margin-top:14px;
+  border-radius:22px;
+  padding:14px;
   display:flex;
   gap:10px;
 }
 
 .red-box{
-  background:#fff5f5;
-  border:1px solid #ffd9d9;
+  background:
+  linear-gradient(145deg,#fff5f5,#fff1f2);
+  border:1px solid #ffd6d6;
 }
 
 .blue-box{
-  background:#f0f7ff;
+  background:
+  linear-gradient(145deg,#f0f7ff,#eef6ff);
   border:1px solid #d9eaff;
 }
 
 .info-icon{
-  width:20px;
-  height:20px;
+  width:22px;
+  height:22px;
   border-radius:50%;
   display:flex;
   align-items:center;
@@ -303,6 +328,7 @@ body{
   color:white;
   font-size:11px;
   flex-shrink:0;
+  margin-top:1px;
 }
 
 .red-box .info-icon{
@@ -315,13 +341,13 @@ body{
 
 .info h4{
   font-size:11px;
-  margin-bottom:3px;
+  margin-bottom:4px;
 }
 
 .info p{
   font-size:10px;
-  line-height:1.5;
-  color:#374151;
+  line-height:1.6;
+  color:#475569;
 }
 
 </style>
@@ -482,12 +508,12 @@ body{
 
   </div>
 
-  <!-- INFO -->
+  <!-- INFO RED -->
 
   <div class="info red-box">
 
     <div class="info-icon">
-      i
+      !
     </div>
 
     <div>
@@ -500,6 +526,8 @@ body{
     </div>
 
   </div>
+
+  <!-- INFO BLUE -->
 
   <div class="info blue-box">
 
