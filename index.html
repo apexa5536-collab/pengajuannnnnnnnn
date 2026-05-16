@@ -1,5 +1,8 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
 
 <meta name="viewport"
 content="width=device-width,
@@ -9,14 +12,25 @@ minimum-scale=1.0,
 user-scalable=no,
 viewport-fit=cover">
 
+<title>Status Pengajuan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
 
 <!-- HEADER -->
 
 <div class="header">
 
-    <div class="reupload">
-  ↻ Re-upload
-</div>
+  <div class="reupload">
+    ↻ Re-upload
+  </div>
 
   <h1>Status Pengajuan</h1>
 
@@ -75,12 +89,12 @@ viewport-fit=cover">
 
   </div>
 
-  <div class="step red">
+  <div class="step success">
 
-    <div class="circle">✕</div>
+    <div class="circle">✓</div>
 
-    <h3 style="color:#fb7185;">
-      Hasil
+    <h3 style="color:#6ee7b7;">
+      Berhasil
     </h3>
 
     <p>
@@ -94,18 +108,18 @@ viewport-fit=cover">
 
 <!-- ALERT -->
 
-<div class="alert glass">
+<div class="alert success-alert glass">
 
-  <div class="alert-icon">
-    ✕
+  <div class="alert-icon success-icon">
+    ✓
   </div>
 
   <div>
 
-    <h2>Pengajuan Tertolak</h2>
+    <h2>Pengajuan Berhasil</h2>
 
     <p>
-      Uang jaminan tidak sesuai
+      Dana sedang diproses ke rekening tujuan
     </p>
 
   </div>
@@ -190,14 +204,14 @@ viewport-fit=cover">
 
       <tr>
         <td>Uang Jaminan Diterima</td>
-        <td>200.000</td>
-        <td class="red-text">Tidak Sesuai</td>
+        <td>1.000.000</td>
+        <td class="green">Sesuai</td>
       </tr>
 
       <tr>
-        <td class="red-text">Kekurangan</td>
-        <td class="red-text">800.000</td>
-        <td></td>
+        <td class="green">Kelebihan</td>
+        <td class="green">0</td>
+        <td class="green">Lunas</td>
       </tr>
 
     </table>
@@ -206,22 +220,20 @@ viewport-fit=cover">
 
   <!-- INFO -->
 
-  <div class="info red-box">
+  <div class="info success-box">
 
-    <div class="info-icon">
-      !
+    <div class="info-icon success-small">
+      ✓
     </div>
 
     <div>
 
-      <h4 class="red-text">
-        Alasan Penolakan
+      <h4 class="green">
+        Verifikasi Berhasil
       </h4>
 
       <p>
-        Uang jaminan yang diterima tidak sesuai dengan ketentuan.
-        Kekurangan sebesar
-        <span class="red-text">800.000</span>
+        Dana berhasil diverifikasi dan pencairan sedang diproses oleh sistem.
       </p>
 
     </div>
@@ -237,11 +249,11 @@ viewport-fit=cover">
     <div>
 
       <h4 style="color:#60a5fa;">
-        Tips
+        Informasi
       </h4>
 
       <p>
-        Pastikan nominal uang jaminan sesuai sebelum melakukan pengajuan ulang.
+        Estimasi pencairan dana sekitar 5-15 menit tergantung antrean sistem bank.
       </p>
 
     </div>
@@ -249,3 +261,6 @@ viewport-fit=cover">
   </div>
 
 </div>
+
+</body>
+</html>
